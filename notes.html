@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Git Commands Notes  ..</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+
+    h1, h2 {
+      color: #2c3e50;
+    }
+
+    .section {
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #3498db;
+      color: white;
+    }
+
+    code {
+      background-color: #eee;
+      padding: 2px 4px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Git Commands Notes</h1>
+
+  <div class="section">
+    <h2>What is Git?</h2>
+    <p><strong>Git</strong> is a <em>version control system</em> that helps developers track and manage changes to source code during development. It's widely used for collaborative software development.</p>
+  </div>
+
+  <div class="section">
+    <h2>Initialization & Configuration</h2>
+    <table>
+      <tr><th>Command</th><th>Description</th></tr>
+      <tr><td><code>git init</code></td><td>Initialize a new Git repository.</td></tr>
+      <tr><td><code>git config --global user.name "Your Name"</code></td><td>Set your Git username.</td></tr>
+      <tr><td><code>git config --global user.email "you@example.com"</code></td><td>Set your Git email.</td></tr>
+      <tr><td><code>git config --list</code></td><td>View Git configuration settings.</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Basic Git Workflow</h2>
+    <table>
+      <tr><th>Command</th><th>Description</th></tr>
+      <tr><td><code>git status</code></td><td>Check current changes and status.</td></tr>
+      <tr><td><code>git add &lt;file&gt;</code></td><td>Stage a file for commit.</td></tr>
+      <tr><td><code>git add .</code></td><td>Stage all files for commit.</td></tr>
+      <tr><td><code>git commit -m "message"</code></td><td>Commit staged changes with a message.</td></tr>
+      <tr><td><code>git log</code></td><td>Show commit history.</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Remote Repositories</h2>
+    <table>
+      <tr><th>Command</th><th>Description</th></tr>
+      <tr><td><code>git remote add origin &lt;url&gt;</code></td><td>Link to a remote repository.</td></tr>
+      <tr><td><code>git push -u origin main</code></td><td>Push local commits to remote main branch.</td></tr>
+      <tr><td><code>git clone &lt;url&gt;</code></td><td>Clone a repository.</td></tr>
+      <tr><td><code>git pull</code></td><td>Fetch and merge changes from remote.</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Branching</h2>
+    <table>
+      <tr><th>Command</th><th>Description</th></tr>
+      <tr><td><code>git branch</code></td><td>List all branches.</td></tr>
+      <tr><td><code>git branch &lt;name&gt;</code></td><td>Create a new branch.</td></tr>
+      <tr><td><code>git checkout &lt;name&gt;</code></td><td>Switch to a branch.</td></tr>
+      <tr><td><code>git checkout -b &lt;name&gt;</code></td><td>Create and switch to a branch.</td></tr>
+      <tr><td><code>git merge &lt;name&gt;</code></td><td>Merge a branch into current branch.</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Undoing Changes</h2>
+    <table>
+      <tr><th>Command</th><th>Description</th></tr>
+      <tr><td><code>git reset &lt;file&gt;</code></td><td>Unstage a file.</td></tr>
+      <tr><td><code>git reset --hard</code></td><td>Discard all changes (use with caution).</td></tr>
+      <tr><td><code>git revert &lt;commit-id&gt;</code></td><td>Undo a specific commit safely.</td></tr>
+    </table>
+  </div>
+
+</body>
+</html>
